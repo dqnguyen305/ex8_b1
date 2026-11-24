@@ -17,4 +17,4 @@ jobs:
         run: docker info
 
       - name: Build Spring Boot image
-        run: docker build --tag quickbite-springboot:${GITHUB_SHA} .
+        run: docker build --file demo/Dockerfile --tag quickbite-springboot:${GITHUB_SHA} demo
